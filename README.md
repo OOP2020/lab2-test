@@ -16,7 +16,7 @@ You can run these tests inside your IDE to verify your code.
 Copy the unit test files into the same directory as your source code.
 In BlueJ, use drag-and-drop so it "sees" the new file, or copy the 
 file and then use `Edit -> Add Class from File...` to add the test
-file to your project.
+file to your BlueJ project.
 
 ### Don't Add Test Classes to Git
 
@@ -24,16 +24,19 @@ Please don't add StopwathTest.java or ArrayMathTest.java to your git repo.
 
 ### Running Tests In BlueJ
 
-* Drag-and-drop the test file into the same directory as your source code, or copy it into the directory and then use `Edit -> Add Class from File...` to add to your project.
-* BlueJ shows test files as green file icons
+* Drag-and-drop the test file into the same directory as your source code, or copy it into the directory and then use `Edit -> Add Class from File...` to add the file to your project.
+* BlueJ shows test classes as green file icons
 * Right-click on a Test file and choose "Test All", or click the "Run Tests" button
-* A pop-up window shows the results. Passing tests get a green check mark.
+* A pop-up window shows the results. Passing tests get a green check mark. 
+* If a test files, the bottom half of the dialog will show which JUnit test failed and why.  The JUnit test will show you what method was being called when the failure occurred, and what the correct result should be.
+* You should correct your code until all tests pass.
 
 BlueJ project window showing test case:
 
 ![BlueJ Project with Tests](images/bluej-project-with-tests.png)
 
-Results of running unit tests. One test failed, 9 tests passed.
+Results of running unit tests. One test failed, 9 tests passed.    
+The lower part of window shows the failure occurred in a test method named `testConstantPolynomial` at line 130.  It expected `polyval` to return 1.0 but `polyval` returned -99.0.
 
 ![BlueJ Test Results](images/bluej-test-results.png)
 

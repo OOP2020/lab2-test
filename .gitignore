@@ -12,9 +12,13 @@ __pycache__
 .idea
 *.iml
 *.ctxt
+package.bluej
 .classpath
 classpath
 .settings
 .project
 .nbproject
 .vscode
+# For this test project, don't include target classes
+Stopwatch.java
+ArrayMath.java
