@@ -29,27 +29,27 @@ import stopwatch.Stopwatch;
  *    d) In your VSCode project, edit the file .vscode/settings.json
  *       and add a line to the variable java.project.referencedLibraries:
  *         "java.project.referencedLibraries": [
-               "/home/your_workspace/lab2/** /*.jar",
-               "/opt/lib/junit4/*.jar"   <-- add your junit jar files
-           ]
+		       "/home/your_workspace/lab2/** /*.jar",
+		       "/opt/lib/junit4/*.jar"   <-- add your junit jar files
+		   ]
  *    e) Close the project and open it again is VS Code.     
  */
 public class StopwatchTest {
-    /** A small tolerance for comparing floating point values. */
-    public static final double TOL = 1.0E-5;
-    /** A test fixture that is initialized before each test. */
-    private Stopwatch sw;
+	/** A small tolerance for comparing floating point values. */
+	public static final double TOL = 1.0E-5;
+	/** A test fixture that is initialized before each test. */
+	private Stopwatch sw;
 
-    @Before
-    public void setUp() {
-        sw = new Stopwatch();
-    }
-    
-    /** Test initial state of a Stopwatch */
-    @Test
-    public void testStopwatchInitialState() {
-        assertFalse(sw.isRunning());
-        assertEquals(0.0, sw.getElapsed(), TOL);
+	@Before
+	public void setUp() {
+		sw = new Stopwatch();
+	}
+	
+	/** Test initial state of a Stopwatch */
+	@Test
+	public void testStopwatchInitialState() {
+		assertFalse(sw.isRunning());
+		assertEquals(0.0, sw.getElapsed(), TOL);
 	}
 	
 	/** Test that start - stop work as required. */
